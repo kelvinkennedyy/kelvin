@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Se Tornar um Streamer</title>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Guia para Se Tornar um Streamer</h1>
+        <p id="subtitle">Dicas, truques e tudo que você precisa para começar!</p>
+    </header>
+    
+    <!-- Seção Principal -->
+    <section>
+        <h2>Passos Iniciais</h2>
+        <ul>
+            <li>
+                <strong>Escolha sua Plataforma:</strong> 
+                Decida onde você quer transmitir, seja Twitch, YouTube, Facebook Gaming, ou outra plataforma. 
+                <button class="info-button" onclick="showInfo('plataforma')">Saiba Mais</button>
+                <div class="info-content" id="plataforma">
+                    <p>A Twitch é conhecida por sua comunidade de jogos, enquanto o YouTube é ótimo para vídeos sob demanda.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Tenha um Equipamento Adequado:</strong>
+                Invista em um bom computador, câmera, microfone e headset para oferecer qualidade.
+                <button class="info-button" onclick="showInfo('equipamento')">Saiba Mais</button>
+                <div class="info-content" id="equipamento">
+                    <p>Para streaming básico, um microfone de qualidade e uma webcam decente são essenciais.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Software de Streaming:</strong>
+                Utilize programas como OBS Studio ou Streamlabs para configurar sua transmissão.
+                <button class="info-button" onclick="showInfo('software')">Saiba Mais</button>
+                <div class="info-content" id="software">
+                    <p>OBS é gratuito e muito flexível, enquanto o Streamlabs oferece uma interface mais amigável.</p>
+                </div>
+            </li>
+        </ul>
+        
+        <h2>Planejamento de Conteúdo</h2>
+        <ul>
+            <li>
+                <strong>Escolha Seu Nicho:</strong>
+                Decida o tipo de conteúdo que você quer criar, seja jogos, vlogs, tutoriais, ou apenas conversas.
+            </li>
+            <li>
+                <strong>Crie um Cronograma:</strong>
+                Tenha uma agenda regular para suas transmissões.
+            </li>
+            <li>
+                <strong>Interaja com a Audiência:</strong>
+                Responda perguntas, leia comentários e interaja com seu público durante a transmissão.
+            </li>
+        </ul>
+
+        <h2>Dicas Finais</h2>
+        <ul>
+            <li>
+                <strong>Seja Consistente:</strong>
+                A consistência é a chave para crescer.
+            </li>
+            <li>
+                <strong>Promova suas Transmissões:</strong>
+                Utilize redes sociais para divulgar suas lives.
+            </li>
+            <li>
+                <strong>Aprenda e Melhore:</strong>
+                Sempre procure formas de melhorar seu conteúdo.
+            </li>
+        </ul>
+
+        <!-- Botão Interativo de Ação -->
+        <div class="center-button">
+            <a href="#" class="cta-button">Comece Sua Jornada!</a>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Guia do Streamer - Todos os direitos reservados</p>
+    </footer>
+
+    <!-- JavaScript para interatividade -->
+    <script>
+        // Função para exibir/esconder informações adicionais
+        function showInfo(id) {
+            const info = document.getElementById(id);
+            if (info.style.display === 'block') {
+                info.style.display = 'none';
+            } else {
+                info.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

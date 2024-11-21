@@ -1,0 +1,147 @@
+/* Estilos Globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Gradiente de cor */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+}
+
+#subtitle {
+    font-style: italic;
+    color: #ffe6e6;
+}
+
+header:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* Seção Principal */
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #1f1f1f;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    animation: slideIn 0.8s ease-out;
+}
+
+/* Títulos e Listas */
+h2 {
+    color: #ff4b2b;
+    border-bottom: 2px solid #ff4b2b;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #242424;
+    margin: 15px 0;
+    padding: 20px;
+    border-left: 6px solid #ff4b2b;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+li:hover {
+    background-color: #333;
+    transform: translateX(15px);
+}
+
+/* Botões de Informação */
+.info-button {
+    background-color: #ff416c;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+    background-color: #ff4b2b;
+}
+
+/* Conteúdo de Informação Escondido */
+.info-content {
+    display: none;
+    margin-top: 10px;
+    background-color: #2c2c2c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Botão de Chamada para Ação */
+.cta-button {
+    display: inline-block;
+    background-color: #ff416c;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: 20px 0;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4b2b;
+    transform: scale(1.1);
+}
+
+/* Centralizar o Botão */
+.center-button {
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #161616;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
